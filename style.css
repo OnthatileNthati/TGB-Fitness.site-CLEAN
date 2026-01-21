@@ -127,8 +127,10 @@ margin-bottom: 40px;
 
 .coach-box{
 display: flex;
+flex-direction: column;
 gap: 40px;
-align-items: flex-start;
+align-items: center;
+text-align: center;
 max-width: 750px;
 margin:auto;
 background: #0f0f0f;
@@ -170,6 +172,7 @@ object-fit: cover;
 border: 2px solid rgba(124, 255, 58, 0.6);
 }
 
+/*WIDE SCREENS*/
 @media (min-width: 900px){
 .coach-box{
 display: flex;
@@ -184,4 +187,19 @@ margin-bottom: 0;
 }
 }
 
+/*SMALLER SCREENS PHONES*/
+@media (max-width:600px){
+
+.coach-box{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.coach-box img{
+max-width: 220px;
+margin-bottom: 20px;
+}
+}
 
