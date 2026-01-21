@@ -203,3 +203,58 @@ margin-bottom: 20px;
 }
 }
 
+
+
+
+
+/*GALLERY SECTION*/
+
+.gallery{
+padding: 40px 20px;
+text-align: center;
+background: black;
+}
+
+.gallery-grid{
+display: grid;
+grid-template-columns: 1fr;
+gap: 30px;
+justify-content: center;
+}
+
+.gallery-grid img{
+width: 100%;
+max-width: 360px;
+height:260px;
+object-fit: cover;
+border-radius: 12px;
+transition: all 0.3s ease;
+border: 2px solid rgba(124, 255, 58, 0.5);
+}
+
+.gallery-grid img:hover{
+transform: scale(1.03);
+}
+
+
+
+.gallery h2{
+color: #7cff3a;
+margin-bottom: 25px;
+}
+
+/*LAPTOPS*/
+
+@media(min-width: 900px){
+.gallery-grid{
+grid-template-columns: repeat(3, 1fr);
+
+}
+
+.gallery-grid img{
+max-width: 420px;
+height: 280px;
+}
+}
+
+
