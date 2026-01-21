@@ -185,33 +185,3 @@ margin-bottom: 0;
 }
 
 
-/*GALLERY SECTION*/
-
-.gallery{
-background: #0f0f0f;
-padding: 70px 20px;
-text-align: center;
-}
-
-.gallery .section-title{
-margin-bottom: 40px;
-}
-
-/*GRID LAYOUT*/
-.gallery-grid{
-width: 100%;
-border-radius: 16px;
-object-fit: cover;
-border: 1px solid rgba(124, 255, 58, 0.4);
-transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover{
-transform: scale (1.03s);
-}
-
-@media (min-width: 900px){
-.gallery-grid{
-grid-template-columns: repeat(2:1);
-}
-}
